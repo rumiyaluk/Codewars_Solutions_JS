@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/55afed09237df733430000423
+function isLucky(n) {
+  return n % 9 == 0 ? true : false;
+}
