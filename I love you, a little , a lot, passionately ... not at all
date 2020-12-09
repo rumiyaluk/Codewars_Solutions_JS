@@ -1,4 +1,5 @@
-https://www.codewars.com/kata/57f24e6a18e9fad8eb000296
+//https://www.codewars.com/kata/57f24e6a18e9fad8eb000296
+
 function howMuchILoveYou(nbPetals) {
   const phrases = [
   'not at all',
