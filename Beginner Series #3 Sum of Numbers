@@ -1,0 +1,17 @@
+//https://www.codewars.com/kata/55f2b110f61eb01779000053
+
+function getSum( a,b ){
+  if (a===b) return a;
+  let sum = 0;
+  if (a < b) {
+  for (let i = a; i <= b; i++) {
+    sum += i;}
+    }
+  else {
+     for (let i=a; i>=b; i--){
+       sum +=i;
+     }
+  }
+   return sum;
+}
+
