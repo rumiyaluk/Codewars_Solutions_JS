@@ -1,0 +1,11 @@
+//https://www.codewars.com/kata/544aed4c4a30184e960010f4
+
+function divisors(integer) {
+  let possibleDivisors = [];
+  for (let i=2; i<integer; i++) {
+    if (integer%i === 0)
+      possibleDivisors.push(i);
+  }
+  return possibleDivisors.length ? possibleDivisors : `${integer} is prime`;
+
+};
