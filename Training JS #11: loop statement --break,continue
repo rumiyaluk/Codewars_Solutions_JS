@@ -1,0 +1,16 @@
+// https://www.codewars.com/kata/5721c189cdd71194c1000b9b
+
+
+function grabDoll(dolls){
+  var bag=[];
+  for( var i = 0; i < dolls.length; i++){
+    if (bag.length === 3) { break;
+  } else if (dolls [i] === "Barbie doll"){
+    bag.push("Barbie doll")
+  } else if (dolls [i] === "Hello Kitty"){
+    bag.push ("Hello Kitty")
+  } else if (dolls [i] !== "Hello Kitty" || dolls [i] !== "Barbie doll")
+    continue;
+  }
+  return bag;
+}
