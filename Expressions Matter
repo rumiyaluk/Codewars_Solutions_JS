@@ -1,0 +1,10 @@
+// https://www.codewars.com/kata/5ae62fcf252e66d44d00008e
+
+function expressionMatter(a, b, c) {
+  let sum = a + b + c;
+  let brOne = a * (b + c);
+  let mul = a * b * c;
+  let brTwo = (a + b) * c;
+  
+  return Math.max(sum, mul, brOne, brTwo);
+}
