@@ -1,0 +1,9 @@
+// https://www.codewars.com/kata/5708f682c69b48047b000e07
+
+function multiply(number){
+ let len = String(Math.abs(number)).length;
+   for (let i = 0; i < len; i++){
+    number *=5;
+  }
+  return number;
+}
