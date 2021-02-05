@@ -1,0 +1,11 @@
+// https://www.codewars.com/kata/564d0490e96393fc5c000029
+
+function coinCombo(cents) {
+    let coins = [1,5,10,25];
+    let combo = [0,0,0,0];
+    for (let i = 3; i >= 0; i--) {
+        combo[i] = Math.floor(cents / coins[i]);
+        cents -= combo[i] * coins[i];
+    }
+    return combo;
+}
