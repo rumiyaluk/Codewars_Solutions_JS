@@ -1,0 +1,20 @@
+// https://www.codewars.com/kata/55e2adece53b4cdcb900006c
+
+S1
+function race(v1, v2, g) {
+    if(v2 <= v1) return null;
+    let res = Math.floor((3600 * g) / (v2 - v1));
+      return [Math.floor (res/ 3600), Math.floor((res/ 60)% 60), res % 60];
+}
+
+
+S2
+function race(v1, v2, g) {
+  if (v2 < v1) { return null; }
+  var seconds = Math.floor(g / (v2 - v1) * 3600);
+  var h = Math.floor(seconds / 3600);
+  var m = Math.floor((seconds - h * 3600) / 60);
+  var s = seconds - h * 3600 - m * 60;
+  
+  return [h, m, s];
+}
