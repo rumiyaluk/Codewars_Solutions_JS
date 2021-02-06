@@ -1,0 +1,6 @@
+// https://www.codewars.com/kata/559cc2d2b802a5c94700000c
+
+function consecutive(arr) {
+ let len = arr.length;
+  return len ? Math.max(...arr) - Math.min(...arr) - len + 1 : 0;
+}
