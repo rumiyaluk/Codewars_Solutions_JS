@@ -1,0 +1,13 @@
+// https://www.codewars.com/kata/582c81d982a0a65424000201
+
+S1
+const arrCheck = arr => {
+ for (let el of arr){
+    if (!Array.isArray(el)) return false;
+}
+return true;
+}
+
+
+S2
+const arrCheck = value => value.every( Array.isArray )
