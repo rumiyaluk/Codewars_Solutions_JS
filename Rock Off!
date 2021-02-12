@@ -1,0 +1,20 @@
+//https://www.codewars.com/kata/5b097da6c3323ac067000036
+
+
+function solve(a, b) {
+  let c1 = 0;
+  let c2 = 0;
+  for(let i = 0; i < a.length; i++){
+     a[i] > b[i] ? c1++ : null;
+     a[i] < b[i] ? c2++ : null;
+  }
+   if (c1 > c2) {
+    return `${c1}, ${c2}: Alice made "Kurt" proud!`
+  }
+  else if (c1 < c2) {
+    return `${c1}, ${c2}: Bob made "Jeff" proud!`
+  }
+  else {
+    return `${c1}, ${c2}: that looks like a "draw"! Rock on!`
+  }
+}
