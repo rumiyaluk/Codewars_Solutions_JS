@@ -1,0 +1,13 @@
+// https://www.codewars.com/kata/545a4c5a61aa4c6916000755
+
+var gimme = function (arr){
+  let index = 0;
+  let max = Math.max(...arr);
+  let min = Math.min(...arr);
+    for(let i = 0; i < arr.length; i++){
+      if(arr[i] !== max && arr[i] !== min){        
+        index = i;
+      }
+    }
+  return index;
+}
