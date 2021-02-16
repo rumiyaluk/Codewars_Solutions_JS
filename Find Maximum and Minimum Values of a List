@@ -1,0 +1,31 @@
+// https://www.codewars.com/kata/577a98a6ae28071780000989
+
+S1
+const min = (list) => Math.min(...list);
+const max = (list) => Math.max(...list);
+
+S2
+const min = list  => {
+  return Math.min(... list);
+ }
+
+ const max = list => {
+  return Math.max(... list);
+}
+
+S3 
+const min = list => {
+    let m = list [0];
+    for (let i = 1; i < list.length; i++){
+      if (list[i] < m) m = list[i];
+    }
+  return m;
+}
+
+const max = list => {
+     let m = list [0];
+    for (let i = 1; i < list.length; i++){
+      if (list[i] > m) m = list[i];
+    }
+  return m;
+}
