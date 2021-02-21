@@ -1,0 +1,10 @@
+// https://www.codewars.com/kata/58ca658cc0d6401f2700045f/solutions/javascript
+
+function findMultiples(int,limit){
+let arr =[];
+  for( let i = integer ; i <= limit; i++){
+    if(i % integer === 0)
+      arr.push(i);
+  }
+  return arr;
+}
