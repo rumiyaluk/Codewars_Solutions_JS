@@ -1,0 +1,17 @@
+// https://www.codewars.com/kata/58646a1173bd9c86080000ef
+
+function  fibonacci(n){
+  if(n==0) return 0;
+    if(n == 1) return 1;
+        let num1 = 0;
+        let  num2 = 1;
+        let sum;
+        let i = 1;
+          while (i<n){
+            sum = num1 + num2;
+            num1 = num2;
+            num2 = sum;
+            i+=1;
+         }
+        return num2;
+}
