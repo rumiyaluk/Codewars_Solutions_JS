@@ -1,0 +1,16 @@
+// https://www.codewars.com/kata/59ca8e8e1a68b7de740001f4
+
+function solve(a,b){
+ let count = 0;
+ let arr = [];
+   for(let i = 0; i < b.length; i++){
+     for(let j= 0; j < a.length; j++){
+       if(b[i] === a[j]){
+        count++;
+       }
+     }
+    arr.push(count);
+    count = 0;
+  }
+  return arr;
+}
