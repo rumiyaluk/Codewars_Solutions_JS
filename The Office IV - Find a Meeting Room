@@ -1,0 +1,7 @@
+
+// https://www.codewars.com/kata/57f604a21bd4fe771b00009c
+
+function meeting(x){
+ let emptyRoomIndex = x.indexOf('O');
+  return emptyRoomIndex === -1 ? 'None available!' : emptyRoomIndex;
+}
