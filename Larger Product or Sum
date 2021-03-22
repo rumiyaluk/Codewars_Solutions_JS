@@ -1,0 +1,28 @@
+
+// https://www.codewars.com/kata/5c4cb8fc3cf185147a5bdd02
+
+1 Solution
+function sumOrProduct(array, n) {
+  array = array.sort((a,b) => a - b);
+  let part1 = array.slice(0,n);
+  let part2 = array.slice(-n)
+  let sum = part2.reduce((a,b) => a + b, 0);
+  let product = part1.reduce ((a,b) => a * b, 1);
+  if (sum > product) return 'sum';
+  else if (sum < product) return 'product';
+  else return 'same';
+  }
+  
+  2 Solutiom
+  function sumOrProduct(array, n) {
+   let sum = 0;
+   let product = 1;
+   array = array.sort((a, b) => a - b);
+    for (let i = array.length - 1; i >= array.length - n; i--){
+     sum += array[i];
+  }
+      for (let i = 0; i < n; i++){
+        product *= array[i];
+     }
+  return sum > product ? 'sum' : sum < product ? 'product' : 'same'; 
+}
