@@ -1,0 +1,6 @@
+//https://www.codewars.com/kata/514a6336889283a3d2000001
+
+Solution
+function getEvenNumbers(numbersArray){
+  return numbersArray.filter((el, i) => el % 2=== 0);
+}
