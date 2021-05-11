@@ -1,0 +1,8 @@
+Task
+//https://www.codewars.com/kata/55b42574ff091733d900002f
+
+Solution
+function filter_list(l) {
+  let arr = l.filter(el => typeof(el) === "number");
+  return arr;
+  }
