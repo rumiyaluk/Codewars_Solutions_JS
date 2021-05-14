@@ -1,0 +1,8 @@
+Task
+//https://www.codewars.com/kata/58be5aff9fb673ada300004c
+
+Solution
+var noLove = function (arr) {
+  arr = arr.filter (el => el!== 69)
+  return arr;
+}
