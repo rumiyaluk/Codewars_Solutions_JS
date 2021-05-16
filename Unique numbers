@@ -1,0 +1,7 @@
+Task
+//https://www.codewars.com/kata/568f9bd9cbe89334c900000c
+
+Solution
+function uniqueNumbers(numbersArray) {
+   return [...new Set(numbersArray)];
+  }
