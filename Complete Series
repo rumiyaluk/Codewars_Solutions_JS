@@ -1,0 +1,14 @@
+Task
+//https://www.codewars.com/kata/580a4001d6df740d61000301
+
+Solution
+function completeSeries(arr) {
+  let a = arr.filter((el,i) => arr.indexOf(el) === i);
+    if (a.length !== arr.length) return [0];
+     let b = Math.max(...arr)
+       let res = [];
+        for(let i = 0; i <= b; i++){
+        res.push(i);
+      }
+   return res;
+}
