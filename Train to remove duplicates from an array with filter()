@@ -1,0 +1,7 @@
+Task
+//https://www.codewars.com/kata/58308360aeb69a460b0002b2
+
+Solution
+function unique(arr) {
+   return arr.filter((el, i) => arr.indexOf(el) === i);
+}
