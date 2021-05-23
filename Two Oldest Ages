@@ -1,0 +1,7 @@
+Task
+// https://www.codewars.com/users/RumiyaLuk/completed_solutions
+
+Solution
+function twoOldestAges(ages){
+  return  ages.sort((a, b) => a - b).slice(-2);
+}
