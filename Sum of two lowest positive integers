@@ -1,0 +1,9 @@
+Task
+//https://www.codewars.com/kata/558fc85d8fd1938afb000014
+
+Solution
+function sumTwoSmallestNumbers(numbers) {  
+  let [ a, b ] = numbers.sort((a, b) => a - b);
+  return a + b;
+}
+
