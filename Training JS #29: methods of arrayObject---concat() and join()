@@ -1,0 +1,14 @@
+Task
+//https://www.codewars.com/kata/5731861d05d14d6f50000626
+
+Solution
+function bigToSmall(arr){
+ let array = [];
+   for (let i = 0; i <arr.length; i++) {
+     for (let j = 0; j < arr[i].length; j++) {
+     array.push(arr[i][j])
+     }
+   }
+    array = array.sort((a,b) => b-a).join('>')
+   return array;
+}
