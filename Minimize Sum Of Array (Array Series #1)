@@ -1,0 +1,25 @@
+Task
+https://www.codewars.com/kata/5a523566b3bfa84c2e00010b
+
+Solution 1
+function minSum(arr) {
+  let a = arr.sort((a,b)=>b-a);
+  let sum = 0;
+  let left = 0; 
+  let right = a.length - 1;
+    for(left; left < right; left ++){
+      sum += a[left]*a[right];
+      right--;
+    }
+  return sum;
+}
+
+Solution 2
+function minSum(arr) {
+   let sorted = arr.sort((a, b)=> a - b);
+ let sum = 0;
+   for (let i = 0; i < arr.length/2; i++){
+    sum += sorted[i] * sorted[sorted.length-1-i];
+   }
+ return sum;
+}
