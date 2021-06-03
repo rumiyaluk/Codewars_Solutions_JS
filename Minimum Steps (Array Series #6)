@@ -1,0 +1,22 @@
+Task
+https://www.codewars.com/kata/5a91a7c5fd8c061367000002
+
+Solution 1
+function minimumSteps(numbers, value){
+   let nums = numbers.slice().sort((a, b) => a - b);
+    let sum = 0;
+    for (let i = 0; i < nums.length; i++) {
+      sum += nums[i];
+      if (sum >= value) {
+      return i;
+      }
+    }
+  }
+  
+  Solution  2
+  function minimumSteps(numbers, value){
+ numbers = numbers.sort((a, b) => a - b);
+  for (let i = 1; i <= numbers.length; i++){
+    if (numbers.slice(0, i).reduce((a, b) => a + b, 0) >= value) return i-1;
+  }
+}
