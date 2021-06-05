@@ -1,0 +1,19 @@
+Task
+//https://www.codewars.com/kata/5f55ecd770692e001484af7d
+
+Solution 1
+function mirror(data) {
+  let newArr = data.concat();
+     newArr.sort((a, b) => a - b);
+      for (let i = newArr.length-2; i >= 0; i--){
+        newArr.push(newArr[i]);
+      }
+  return newArr;
+}
+
+Solution 2
+function mirror(data) {
+  let x = data.slice().sort((a, b)=> a - b);
+  let y = data.slice().sort((a,b)=> b - a).slice(1) ;
+    return x.concat(y);
+}
